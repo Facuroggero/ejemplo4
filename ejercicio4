@@ -1,0 +1,29 @@
+public class main {
+   public static void main (string[] args) {
+      Cliente cliente = new cliente();
+      cliente.edad = "25" ;
+      cliente.nombre = "facundo" ;
+      cliente.telefono = "3487707177" ;
+      cliente.credito = "20000" ;
+      
+      Trabajador trabajador = new trabajador();
+      trabajador.edad = "30" ;
+      trabajador.nombre = "juan" ;
+      trabajador.telefono = "01134567932" ; 
+      trabajador.salario = "150000" ; 
+   }
+  }
+  
+  class persona {
+    int edad;
+    string nombre;
+    int telefono;
+  }
+  
+  class cliente extends persona {
+    int credito;
+  }
+  
+  class trabajador extends persona {
+    int salario;
+  }
